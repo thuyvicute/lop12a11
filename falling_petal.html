@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hoa Đào Rơi | Tết</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #ffe4b5;
+        }
+
+        .petal {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: pink;
+            border-radius: 50%;
+            box-shadow: 0 0 5px rgba(255, 20, 147, 0.8);
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        const numPetals = 50; // Number of petals
+
+        for (let i = 0; i < numPetals; i++) {
+            const petal = document.createElement("div");
+            petal.className = "petal";
+            petal.style.left = Math.random() * 100 + "vw";
+            petal.style.animation = `fall ${Math.random() * 3 + 5}s linear infinite`;
+            petal.style.animationDelay = Math.random() * 5 + "s";
+            document.body.appendChild(petal);
+        }
+    </script>
+</body>
+
+</html>

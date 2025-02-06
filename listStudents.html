@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Nhóm 2 | Lớp 12A11</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.25/datatables.min.css" />
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="layout.css">
+</head>
+
+<body>
+    <iframe src="falling_petal.html" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; z-index: -1;"></iframe>
+    <div class="container">
+        <header class="row">
+            <div id="brand" class="col-12 col-lg-7">
+                <a href="index.html" class="navbar-brand">
+                    <img src="logo.jpg" alt="Logo" id="logo" class="d-none d-sm-inline">
+                    <span id="brand_name">Chào Mừng Đến Với Lớp 12A11</span>
+                </a>
+            </div>
+            <audio id="audioPlayer" controls>
+                <source src="ngày ấy bạn và tôi.mp3" type="audio/mp3">
+            </audio>
+        </header>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <button class="btn btn-outline-primary m-auto navbar-toggler d-lg-none d-block" id="btn_menu"
+                data-toggle="collapse" data-target="#nav_bar" aria-controls="nav_bar_box" aria-expanded="false"
+                aria-label="Toggle navigation">
+                Mục lục
+            </button>
+            <nav class="col-lg-2 navbar-collapse collapse expand-lg" id="nav_bar">
+                <a href="index.html" class="nav_option">Trang chủ</a>
+                <!-- <div class="nav_group">
+                    <p class="nav_group_name">Thêm</p>
+                    <a href="./createStudent.html" class="nav_option">Học sinh</a>
+                    <a href="./createClass.html" class="nav_option">Lớp học</a>
+                    <a href="./createSubject.html" class="nav_option">Môn học</a>
+                    <a href="./createTranscript.html" class="nav_option">Bảng điểm</a>
+                </div> -->
+                <div class="nav_group">
+                    <p class="nav_group_name">Danh sách</p>
+                    <a href="listStudents.html" class="nav_option current_item">Học sinh</a>
+                    <a href="listStudents.html" class="nav_option">Lớp học</a>
+                    <a href="listStudents.html" class="nav_option">Môn học</a>
+                    <a href="listStudents.html" class="nav_option">Bảng điểm</a>
+                </div>
+                <div class="nav_group">
+                    <p class="nav_group_name">Khác</p>
+                    <a href="listStudents.html" class="nav_option">Tra cứu điểm</a>
+                    <a href="listStudents.html" class="nav_option">Báo cáo môn học</a>
+                    <a href="listStudents.html" class="nav_option">Báo cáo học kỳ</a>
+                    <a href="listStudents.html" class="nav_option">Thay đổi quy định</a>
+                </div>
+            </nav>
+            <div class="col-lg-10 content">
+            
+                <p class="page_title"></p>
+                <p style="margin-center: 300px;">Lớp 12A11 là tập thể học sinh năng động, vui vẻ và sáng tạo với 43 thành viên luôn đoàn kết trong học tập và phong trào. 
+                    Trong suốt ba năm qua, lớp đã đạt nhiều thành tích nổi bật, tiêu biểu như giải đặc biệt hội thi làm cốm dẹp Khmer (15/1/2024), 
+                    giải nhì bóng chuyền nữ trong hội khỏe trường (7/1/2024), và giải nhì hội thi lắp ráp robot - STEM (28/1/2024). 
+                    Những thành công này là kết quả của sự cố gắng không ngừng nghỉ, tinh thần đồng đội và sự sáng tạo của các bạn học sinh.
+                    Đồng hành cùng lớp trong hành trình ấy là thầy chủ nhiệm Thạch Xa Riết, người luôn tận tâm, nhiệt huyết và tạo môi trường học tập lý tưởng. 
+                    Thầy không chỉ giảng dạy kiến thức mà còn là người bạn, người anh lớn luôn lắng nghe, chia sẻ, giúp học sinh phát huy tối đa tiềm năng. 
+                    Sự gắn bó giữa thầy và trò đã tạo nên một lớp học đầy ắp tiếng cười, kỷ niệm và sự đoàn kết. Năm học cuối cùng của lớp 12A11 trở nên đặc biệt hơn bao giờ hết khi mọi người đều trân trọng từng khoảnh khắc bên nhau. 
+                    Những giờ học căng thẳng, giờ chơi vui vẻ hay phút động viên nhau đều để lại dấu ấn khó quên. Dù chặng đường phía trước còn nhiều thử thách, nhưng tình bạn, 
+                    sự đoàn kết và những kỷ niệm đẹp tại 12A11 sẽ luôn là hành trang quý giá để mỗi người bước tiếp.
+
+
+                </p>
+                <img src="thúy vi1.jpg" alt="Logo" id="logo" class="d-none d-sm-inline" style="width: 250px; height: auto;">
+                <p style="margin-left: 400px;">Tập Thể Lớp 12A11.</p>
+            
+                            
+                        </tbody>
+                    </table>
+                </div>
+            
+                <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="deleteModalLabel">Xóa học sinh</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                </button>
+                            </div>
+                            <form id="form_delete" method="post" action="#">
+                            <div class="modal-body">
+                                <input type="text" name="id" hidden/>
+                                <p>Bạn có chắc chắn muốn xóa học sinh có mã số <span
+                                        id="id_to_delete"></span> ?</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Không</button>
+                                <button type="submit" class="btn btn-primary">Có</button>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Delete Modal -->
+                <!--    End of Content  -->
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <footer>
+            <p>&#169; Nhóm 2  </p>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.25/datatables.min.js"></script>
+    <script src="custom.js"></script>
+</body>
+
+</html>
